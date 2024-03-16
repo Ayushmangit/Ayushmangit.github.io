@@ -10,370 +10,372 @@
       rel="stylesheet"
     />
     <style>
-      * {
-        margin: 0px;
-        padding: 0px;
-        box-sizing: border-box;
-      }
-      body {
-        font-family: "inter", sans-serif;
+            * {
+              margin: 0px;
+              padding: 0px;
+              box-sizing: border-box;
+            }
+            body {
+              font-family: "inter", sans-serif;
+              width: 1200px;
+              margin: 0px auto;
+              /* display: flex;
+              flex-direction: column; */
+            }
 
-        width: auto;
-        margin: 0px auto;
-        /* display: flex;
-        flex-direction: column; */
-      }
+            .container {
+              display: flex;
+              width: 1200px;
 
-      .container {
-        display: flex;
-        width: 1200px;
+              margin: 8px auto 100px auto;
+              /* display: flex;
+              justify-content: end;
+              align-items: center; */
+              /* padding: 24px; */
+              /* align-content: end;
+              justify-content: end; */
+            }
 
-        margin: 8px auto 100px auto;
-        /* display: flex;
-        justify-content: end;
-        align-items: center; */
-        /* padding: 24px; */
-        /* align-content: end;
-        justify-content: end; */
-      }
+            h1 {
+              font-weight: 700;
+              color: #343a40;
+              text-transform: uppercase;
+              letter-spacing: -0.5px;
+              line-height: 1.1;
+              font-size: 64px;
+              margin-bottom: 48px;
+            }
+            /* img {
+              width: 800px;
+              object-fit: cover;
 
-      h1 {
-        font-weight: 700;
-        color: #343a40;
-        text-transform: uppercase;
-        letter-spacing: -0.5px;
-        line-height: 1.1;
-        font-size: 64px;
-        margin-bottom: 48px;
-      }
-      /* img {
-        width: 800px;
-        object-fit: cover;
+            } */
+            p {
+              font-weight: 500;
+              font-size: 18px;
+              margin-bottom: 32px;
+              color: #868e96;
+            }
+            .description-image {
+              width: 600px;
+              border-radius: 8px;
+              box-shadow: 0 12px 24px rgba(0, 0, 0, 0.25);
+              order: 1;
+            }
 
-      } */
-      p {
-        font-weight: 500;
-        font-size: 18px;
-        margin-bottom: 32px;
-        color: #868e96;
-      }
-      .description-image {
-        width: 600px;
-        border-radius: 8px;
-        box-shadow: 0 12px 24px rgba(0, 0, 0, 0.25);
-        order: 1;
-      }
+            .description {
+              color: #ffa94d;
+              display: flex;
+              flex-direction: column;
+              justify-content: center;
+              padding: 48px;
+              /* backdrop-filter: blur(2px); */
+              /* filter: brightness(130%); */
+            }
 
-      .description {
-        color: #ffa94d;
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        padding: 48px;
-        /* backdrop-filter: blur(2px); */
-        /* filter: brightness(130%); */
-      }
+            .button-insta {
+              display: flex;
+              width: max-content;
+              height: max-content;
+              font-size: 18px;
+              text-transform: uppercase;
+              padding: 14px 38px;
+              background-color: #ff922b;
+              border-radius: 8px;
+              color: #fff;
+            }
 
-      .button-insta {
-        display: flex;
-        width: max-content;
-        height: max-content;
-        font-size: 18px;
-        text-transform: uppercase;
-        padding: 14px 38px;
-        background-color: #ff922b;
-        border-radius: 8px;
-        color: #fff;
-      }
+            .button-insta:link,
+            .button-insta:visited {
+              display: flex;
+              width: max-content;
+              height: max-content;
+              font-size: 18px;
+              text-transform: uppercase;
+              padding: 14px 38px;
+              background-color: #ff922b;
+              border-radius: 8px;
+              color: #fff;
+            }
 
-      .button-insta:link,
-      .button-insta:visited {
-        display: flex;
-        width: max-content;
-        height: max-content;
-        font-size: 18px;
-        text-transform: uppercase;
-        padding: 14px 38px;
-        background-color: #ff922b;
-        border-radius: 8px;
-        color: #fff;
-      }
+            .button-insta:hover,
+            .button-insta:active {
+              background-color: #ffa94d;
+              display: flex;
+              width: max-content;
+              height: max-content;
+              font-size: 18px;
+              text-transform: uppercase;
+              padding: 14px 38px;
+              border-radius: 8px;
+              color: #fff;
+            }
 
-      .button-insta:hover,
-      .button-insta:active {
-        background-color: #ffa94d;
-        display: flex;
-        width: max-content;
-        height: max-content;
-        font-size: 18px;
-        text-transform: uppercase;
-        padding: 14px 38px;
-        border-radius: 8px;
-        color: #fff;
-      }
+            .icon {
+              stroke: #fff;
+              padding-left: 10px;
+              width: 14px;
+              height: 14px;
+            }
+            .navigation {
+              width: 1200px;
+              margin: 0px auto;
+              display: flex;
+              gap: 20px;
+              grid-column: 1/5;
+              justify-content: flex-end;
+              padding: 20px;
+            }
+            .navigation a:link,
+            .navigation a:visited {
+              color: #343a40;
+              text-decoration: none;
+              text-transform: uppercase;
+              font-size: 14px;
+              display: block;
+            }
+            .navigation a:hover,
+            .navigation a:active {
+              font-size: 18px;
+              font-weight: 500;
+              display: block;
+              cursor: pointer;
+            }
 
-      .icon {
-        stroke: #fff;
-        padding-left: 10px;
-        width: 14px;
-        height: 14px;
-      }
-      .navigation {
-        width: 1200px;
-        margin: 0px auto;
-        display: flex;
-        gap: 20px;
-        grid-column: 1/5;
-        justify-content: flex-end;
-        padding: 20px;
-      }
-      .navigation a:link,
-      .navigation a:visited {
-        color: #343a40;
-        text-decoration: none;
-        text-transform: uppercase;
-        font-size: 14px;
-        display: block;
-      }
-      .navigation a:hover,
-      .navigation a:active {
-        font-size: 18px;
-        font-weight: 500;
-        display: block;
-        cursor: pointer;
-      }
+            /* carousel */
+            .carousel-header {
+              margin: 50px auto;
+              font-weight: 700;
+              text-transform: uppercase;
+              text-align: center;
+              font-size: 32px;
+              color: #495057;
+            }
 
-      /* carousel */
-      .carousel-header {
-        margin: 50px auto;
-        font-weight: 700;
-        text-transform: uppercase;
-        text-align: center;
-        font-size: 32px;
-        color: #495057;
-      }
+            .carousel {
+              background-color: #087f5b;
+              width: 800px;
+              padding: 32px 48px 32px 86px;
+              border-radius: 8px;
+              margin:50px auto ;
+              display: flex;
+              align-items: center;
+              gap: 86px;
+              position: relative;
+            }
 
-      .carousel {
-        background-color: #087f5b;
-        width: 800px;
-        padding: 32px 48px 32px 86px;
-        border-radius: 8px;
-        margin:50px auto ;
-        display: flex;
-        align-items: center;
-        gap: 86px;
-        position: relative;
-      }
+            .carousel-image {
+              height: 200px;
+              border-radius: 8px;
+              transform: scale(1.5);
+              box-shadow: 0 12px 24px rgba(0, 0, 0, 0.25);
+            }
 
-      .carousel-image {
-        height: 200px;
-        border-radius: 8px;
-        transform: scale(1.5);
-        box-shadow: 0 12px 24px rgba(0, 0, 0, 0.25);
-      }
+            .testimonial-text {
+              font-size: 18px;
+              font-weight: 500;
+              line-height: 1.5;
+              margin-bottom: 32px;
+              color: #e6fcf5;
+            }
+            .testimonial-author {
+              font-size: 14px;
+              margin-bottom: 4px;
+              color: #c3fae8;
+            }
+            .testimonial-job {
+              font-size: 12px;
+              color: #c3fae8;
+            }
 
-      .testimonial-text {
-        font-size: 18px;
-        font-weight: 500;
-        line-height: 1.5;
-        margin-bottom: 32px;
-        color: #e6fcf5;
-      }
-      .testimonial-author {
-        font-size: 14px;
-        margin-bottom: 4px;
-        color: #c3fae8;
-      }
-      .testimonial-job {
-        font-size: 12px;
-        color: #c3fae8;
-      }
+            /* controls */
+            .icon-carousel {
+              height: 24px;
+              width: 24px;
+              stroke: #087f5b;
+            }
+            .btn {
+              width: 40px;
+              height: 40px;
+              background-color: #fff;
+              border: none;
 
-      /* controls */
-      .icon {
-        height: 24px;
-        width: 24px;
-        stroke: #087f5b;
-      }
-      .btn {
-        width: 40px;
-        height: 40px;
-        background-color: #fff;
-        border: none;
+              border-radius: 50%;
+              box-shadow: 0 12px 24px rgba(0, 0, 0, 0.25);
+              position: absolute;
+              cursor: pointer;
 
-        border-radius: 50%;
-        box-shadow: 0 12px 24px rgba(0, 0, 0, 0.25);
-        position: absolute;
-        cursor: pointer;
+              display: flex;
+              align-items: center;
+              justify-content: center;
+            }
+            .btn--left {
+              /* in relation to parent element */
+              left: 0;
+              top: 50%;
+              /* in realtion to the element itself */
+              transform: translate(-50%, -50%);
+            }
+            .btn--right {
+              right: 0;
+              top: 50%;
 
-        display: flex;
-        align-items: center;
-        justify-content: center;
-      }
-      .btn--left {
-        /* in relation to parent element */
-        left: 0;
-        top: 50%;
-        /* in realtion to the element itself */
-        transform: translate(-50%, -50%);
-      }
-      .btn--right {
-        right: 0;
-        top: 50%;
+              transform: translate(50%, -50%);
+            }
+            .dots {
+              position: absolute;
+              left: 50%;
+              bottom: 0;
+              transform: translate(-50%, 32px);
 
-        transform: translate(50%, -50%);
-      }
-      .dots {
-        position: absolute;
-        left: 50%;
-        bottom: 0;
-        transform: translate(-50%, 32px);
+              display: flex;
+              gap: 12px;
+            }
+            .dot {
+              height: 12px;
+              width: 12px;
+              background-color: #fff;
+              border: 2px solid #087f5b;
+              border-radius: 50%;
+              cursor: pointer;
+            }
+            .dot--fill {
+              background-color: #087f5b;
+            }
 
-        display: flex;
-        gap: 12px;
-      }
-      .dot {
-        height: 12px;
-        width: 12px;
-        background-color: #fff;
-        border: 2px solid #087f5b;
-        border-radius: 50%;
-        cursor: pointer;
-      }
-      .dot--fill {
-        background-color: #087f5b;
-      }
+      /*       Accordian component */
+            .accordian {
+              width: 700px;
+              margin: 100px auto;
+              display: flex;
+              flex-direction: column;
+              gap: 24px;
+            }
+            .icon {
+              width: 24px;
+              height: 24px;
+              stroke: #087f5b;
+            }
+            .item {
+              box-shadow: 0 0 32px rgba(0, 0, 0, 0.1);
+              padding: 24px;
+              display: grid;
+              grid-template-columns: auto 1fr auto;
+              column-gap: 24px;
+              row-gap: 32px;
+              align-items: center;
+            }
+            .number,
+            .text {
+              font-weight: 500;
+              font-size: 24px;
+              /* color: #087f5b; */
+            }
+            .number {
+              color: #ced4da;
+            }
+            .hidden-box {
+              grid-column: 2;
+              display: none;
+            }
+            .hidden-box p {
+              line-height: 1.6;
+              margin-bottom: 24px;
+              font-weight: 500;
+            }
 
-/*       Accordian component */
-      .accordian {
-        width: 700px;
-        margin: 100px auto;
-        display: flex;
-        flex-direction: column;
-        gap: 24px;
-      }
-      .icon {
-        width: 24px;
-        height: 24px;
-        stroke: #087f5b;
-      }
-      .item {
-        box-shadow: 0 0 32px rgba(0, 0, 0, 0.1);
-        padding: 24px;
-        display: grid;
-        grid-template-columns: auto 1fr auto;
-        column-gap: 24px;
-        row-gap: 32px;
-        align-items: center;
-      }
-      .number,
-      .text {
-        font-weight: 500;
-        font-size: 24px;
-        /* color: #087f5b; */
-      }
-      .number {
-        color: #ced4da;
-      }
-      .hidden-box {
-        grid-column: 2;
-        display: none;
-      }
-      .hidden-box p {
-        line-height: 1.6;
-        margin-bottom: 24px;
-        font-weight: 500;
-      }
+            .hidden-box ul {
+              color: #adb5bd;
+              margin-left: 20px;
+              display: flex;
+              flex-direction: column;
+              gap: 12px;
+            }
+            .open-accordian {
+              border-top: #087f5b 4px solid;
+            }
+            .open-accordian .hidden-box {
+              display: block;
+            }
+            .open-accordian .number,
+            .open-accordian .text {
+              color: #087f5b;
+            }
 
-      .hidden-box ul {
-        color: #adb5bd;
-        margin-left: 20px;
-        display: flex;
-        flex-direction: column;
-        gap: 12px;
-      }
-      .open {
-        border-top: #087f5b 4px solid;
-      }
-      .open .hidden-box {
-        display: block;
-      }
-      .open .number,
-      .open .text {
-        color: #087f5b;
-      }
+            /* pagination component */
 
-      /* pagination component */
+            .pagination {
+              width 1200px;
+              /* background-color: #087f5b; */
+              margin: 100px auto;
+              display: flex;
+              gap: 16px;
+              align-items: center;
+              justify-content: center;
+            }
+            /* buttons */
+            .btnpgn {
+              background: none;
+              border: none;
+              width: 48px;
+              height: 48px;
+              background: none;
+              border-radius: 100px;
+              border: 1px solid #087f5b;
+            }
+            .btnpgn:hover {
+              background-color: #087f5b;
+            }
+            .btnpgn:hover .icon {
+              stroke: #fff;
+            }
 
-      .pagination {
-        width 1200px;
-        /* background-color: #087f5b; */
-        margin: 100px auto;
-        display: flex;
-        gap: 16px;
-        align-items: center;
-        justify-content: center;
-      }
-      /* buttons */
-      .btnpgn {
-        background: none;
-        border: none;
-        width: 48px;
-        height: 48px;
-        background: none;
-        border-radius: 100px;
-        border: 1px solid #087f5b;
-      }
-      .btnpgn:hover {
-        background-color: #087f5b;
-      }
-      .btnpgn:hover .icon {
-        stroke: #fff;
-      }
+            .icon-pagination {
+              width: 24px;
+              height: 24px;
+              stroke: #087f5b;
+            }
 
-      .icon {
-        width: 24px;
-        height: 24px;
-        stroke: #087f5b;
-      }
+            button {
+              width: 40px;
+              height: 40px;
+              background: none;
+              border: none;
+              font-weight: 600;
+            }
+            .page-links-pgn:link,
+            .page-links-pgn:visited {
+              font-size: 18px;
+              /* background-color: #087f5b; */
+              text-decoration: none;
+              color: #343a40;
+              height: 36px;
+              width: 36px;
 
-      button {
-        width: 40px;
-        height: 40px;
-        background: none;
-        border: none;
-        font-weight: 600;
-      }
-      .page-links:link,
-      .page-links:visited {
-        font-size: 18px;
-        /* background-color: #087f5b; */
-        text-decoration: none;
-        color: #343a40;
-        height: 36px;
-        width: 36px;
+              display: flex;
+              align-items: center;
+              justify-content: center;
+              border-radius: 100px;
+            }
+            .page-links-pgn:hover,
+            .page-links-pgn:active,
+            .page-links-pgn.open {
+              font-size: 18px;
+              height: 36px;
+              width: 36px;
+              background-color: #087f5b;
+              color: #fff;
 
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        border-radius: 100px;
-      }
-      .page-links:hover,
-      .page-links:active,
-      .page-links.open {
-        background-color: #087f5b;
-        color: #fff;
-        
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        border-radius: 100px;
-        
-      }
+              display: flex;
+              align-items: center;
+              justify-content: center;
+              border-radius: 100px;
 
-      .dots--pagination {
-        color: #343a40;
-      }
+            }
+
+            .dots--pagination {
+              color: #343a40;
+            }
     </style>
   </head>
 
@@ -420,7 +422,7 @@
           viewBox="0 0 24 24"
           stroke-width="1.5"
           stroke="currentColor"
-          class="icon"
+          class="icon-carousel"
         >
           <path
             stroke-linecap="round"
@@ -436,7 +438,7 @@
           viewBox="0 0 24 24"
           stroke-width="1.5"
           stroke="currentColor"
-          class="icon"
+          class="icon-carousel"
         >
           <path
             stroke-linecap="round"
@@ -452,8 +454,8 @@
         <button class="dot">&nbsp;</button>
       </div>
     </div>
-<!--accordian component  -->
-  <div class="accordian">
+    <!--accordian component  -->
+    <div class="accordian">
       <div class="item">
         <p class="number">01</p>
         <p class="text">Where are these chairs assembled?</p>
@@ -487,7 +489,7 @@
         </div>
       </div>
 
-      <div class="item open">
+      <div class="item open-accordian">
         <p class="number">02</p>
         <p class="text">how long do i have to return my chair?</p>
         <svg
@@ -553,8 +555,8 @@
         </div>
       </div>
     </div>
-    
-<!--     pagination component -->
+
+    <!--     pagination component -->
     <div class="pagination">
       <button class="btnpgn btn--leftpgn">
         <svg
@@ -563,7 +565,7 @@
           viewBox="0 0 24 24"
           stroke-width="1.5"
           stroke="currentColor"
-          class="icon"
+          class="icon-pagination"
         >
           <path
             stroke-linecap="round"
@@ -572,14 +574,14 @@
           />
         </svg>
       </button>
-      <a href="#" class="page-links">1</a>
-      <a href="#" class="page-links">2</a>
-      <a href="#" class="page-links open">3</a>
-      <a href="#" class="page-links">4</a>
-      <a href="#" class="page-links">5</a>
-      <a href="#" class="page-links">6</a>
+      <a href="#" class="page-links-pgn">1</a>
+      <a href="#" class="page-links-pgn">2</a>
+      <a href="#" class="page-links-pgn open">3</a>
+      <a href="#" class="page-links-pgn">4</a>
+      <a href="#" class="page-links-pgn">5</a>
+      <a href="#" class="page-links-pgn">6</a>
       <span class="dots--pagination">...</span>
-      <a href="#" class="page-links">23</a>
+      <a href="#" class="page-links-pgn">23</a>
 
       <button class="btnpgn btn--rightpgn">
         <svg
@@ -588,7 +590,7 @@
           viewBox="0 0 24 24"
           stroke-width="1.5"
           stroke="currentColor"
-          class="icon"
+          class="icon-pagination"
         >
           <path
             stroke-linecap="round"
