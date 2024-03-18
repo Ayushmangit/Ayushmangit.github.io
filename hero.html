@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300..900;1,300..900&display=swap"
+      rel="stylesheet"
+    />
+    <title>Hero Section</title>
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+      header {
+        height: 100vh;
+        background-image: linear-gradient(
+            rgba(24, 24, 24, 0.6),
+            rgba(24, 24, 24, 0.6)
+          ),
+          url("hero.jpg");
+        background-size: cover;
+      }
+      .header-container {
+        width: 1200px;
+        position: absolute;
+
+        top: 50%;
+        left: 50%;
+
+        transform: translate(-50%, -50%);
+      }
+      .header-container-inner {
+        width: 50%;
+      }
+      .container {
+        margin: 0 auto;
+        width: 1200px;
+      }
+      body {
+        font-family: "rubik", sans-serif;
+        color: #fff;
+      }
+      nav {
+        padding-top: 32px;
+        font-size: 20px;
+        font-weight: 700;
+        display: flex;
+        justify-content: space-between;
+      }
+      h1 {
+        font-size: 52px;
+        margin-bottom: 32px;
+        line-height: 1.05;
+      }
+      p {
+        font-size: 20px;
+        line-height: 1.6;
+        margin-bottom: 48px;
+      }
+      .btn:link,
+      .btn:visited {
+        text-decoration: none;
+        font-size: 20px;
+        font-weight: 600;
+        background-color: #e67e22;
+        color: #fff;
+        display: inline-block;
+        padding: 16px 32px;
+        border-radius: 9px;
+      }
+      h2 {
+        font-size: 44px;
+        margin-bottom: 48px;
+      }
+      section {
+        padding: 96px 0;
+      }
+    </style>
+  </head>
+  <body>
+    <header>
+      <nav class="container">
+        <div>LOGO</div>
+        <div>NAVIGATION</div>
+      </nav>
+      <div class="header-container">
+        <div class="header-container-inner">
+          <h1>A healthy meal delivered to your door, every single day</h1>
+          <p>
+            The smart 365-days-per-year food subscription that will make you eat
+            healthy again. Tailored to your personal tastes and nutritional
+            needs
+          </p>
+          <a href="#" class="btn">Start eating well</a>
+        </div>
+      </div>
+    </header>
+    <section>
+      <div class="container">
+        <h2>Some random heading</h2>
+        <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Quae
+          molestiae nemo magnam repellat alias maiores doloribus sunt dolores
+          dolore debitis! Perferendis iure deserunt corporis, necessitatibus
+          dolore cupiditate consequuntur fuga maxime! Lorem ipsum dolor sit amet
+          consectetur adipisicing elit. Quia nobis beatae nihil exercitationem
+          quos accusantium? Quidem excepturi, ab alias tempore voluptatum minima
+          error ad eum distinctio voluptates quam enim! Consectetur!
+        </p>
+      </div>
+    </section>
+  </body>
+</html>
