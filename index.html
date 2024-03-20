@@ -27,7 +27,7 @@
             rgba(19, 19, 19, 0.726),
             rgba(19, 19, 19, 0.726)
           ),
-          url(20220925_101008.jpg);
+          url(20231015_133417.jpg);
         background-size: cover;
         background-position: right;
 
@@ -86,34 +86,37 @@
         /* filter: brightness(130%); */
       }
 
-      .button-insta {
+      .component-btn {
+        display: flex;
+        width: max-content;
+        height: max-content;
+        font-weight: 600;
+        font-size: 18px;
+        text-transform: uppercase;
+        padding: 14px 38px;
+        background-color: #f08c00;
+        border-radius: 8px;
+        color: #fff;
+        text-decoration: none;
+      }
+
+      .component-btn:link,
+      .component-btn:visited {
         display: flex;
         width: max-content;
         height: max-content;
         font-size: 18px;
         text-transform: uppercase;
         padding: 14px 38px;
-        background-color: #ff922b;
+        background-color: #f08c00;
         border-radius: 8px;
         color: #fff;
       }
 
-      .button-insta:link,
-      .button-insta:visited {
-        display: flex;
-        width: max-content;
-        height: max-content;
-        font-size: 18px;
-        text-transform: uppercase;
-        padding: 14px 38px;
-        background-color: #ff922b;
-        border-radius: 8px;
-        color: #fff;
-      }
-
-      .button-insta:hover,
-      .button-insta:active {
-        background-color: #ffa94d;
+      .component-btn:hover,
+      .component-btn:active {
+        scale: 1.1;
+        background-color: #f08c00;
         display: flex;
         width: max-content;
         height: max-content;
@@ -132,8 +135,8 @@
       }
       .navigation {
         background-image: linear-gradient(
-          rgba(0, 0, 0, 0.16),
-          rgba(0, 0, 0, 0.16)
+          rgba(255, 255, 255, 0.16),
+          rgba(255, 255, 255, 0.16)
         );
         display: flex;
         justify-content: flex-end;
@@ -159,7 +162,8 @@
       }
 
       /* carousel */
-      .carousel-header {
+      .carousel-header,
+      h2 {
         margin: 50px auto;
         font-weight: 700;
         text-transform: uppercase;
@@ -409,6 +413,7 @@
         <a class="links" href="pagination.html">pagination</a>
         <a class="links" href="hero.html">HERO component</a>
         <a class="links" href="03-table.html">table</a>
+        <a class="links" href="component.html">component</a>
       </nav>
 
       <!-- <img
@@ -419,13 +424,16 @@
       <div class="container">
         <div class="description--inner">
           <div class="description">
-            <h1>Ayushman Chauhan</h1>
+            <h1>FrontEnd Developer</h1>
             <p>
-              Aspiring Software Developer hailing from a small city from
-              Uttarakhand called Dehradun, I am currently persuing Diploma in
-              computer Science Engineering from graphic Era hill university...
+              HI, I am <strong>Ayushman Chauhan</strong> hailing from a small
+              city from Uttarakhand called Dehradun, I am currently persuing
+              Diploma in computer Science Engineering from graphic Era hill
+              university...
             </p>
-            <button class="button-insta">Instagram</button>
+            <a class="component-btn" href="component.html" target="_blank"
+              >COMPONENT</a
+            >
           </div>
         </div>
       </div>
@@ -482,6 +490,7 @@
       </div>
     </div>
     <!--accordian component  -->
+    <h2>This is the Accordian Component</h2>
     <div class="accordian">
       <div class="item">
         <p class="number">01</p>
@@ -584,6 +593,7 @@
     </div>
 
     <!--     pagination component -->
+    <h2>This is the pagination Component</h2>
     <div class="pagination">
       <button class="btnpgn btn--leftpgn">
         <svg
