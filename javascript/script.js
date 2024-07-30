@@ -117,3 +117,20 @@ checkFlexGap();
   }
 }
 */
+const yearlyEl = document.querySelector(".yearBtn");
+const monthlyEl = document.querySelector(".monthlyBtn");
+const starterEl = document.querySelector(".starter");
+const completeEl = document.querySelector(".complete");
+
+yearlyEl.addEventListener("click", function () {
+  starterEl.textContent = `${399 * 12}`;
+  completeEl.textContent = `${649 * 12}`;
+  yearlyEl.classList.add("active");
+  monthlyEl.classList.remove("active");
+});
+monthlyEl.addEventListener("click", function () {
+  starterEl.textContent = "399";
+  completeEl.textContent = "649";
+  yearlyEl.classList.remove("active");
+  monthlyEl.classList.add("active");
+});
