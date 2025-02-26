@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link href="./output.css" rel="stylesheet" />
+  </head>
+  <body>
+    
+    <nav class="flex justify-end"></nav>
+    <div class="flex justify-between">
+      <span></span>
+      <button id="menu-button" class="text-3xl focus:outline-none self-end">
+        &#9776;
+      </button>
+    </div>
+
+    <div id="menu" class="hidden flex flex-col absolute right-4 top-16 bg-white shadow-lg rounded-lg">
+      <a href="#Recent" class="px-4 py-2 text-gray-800 hover:bg-gray-200">Recent Posts</a>
+      <a href="#Featured" class="px-4 py-2 text-gray-800 hover:bg-gray-200">Featured Works</a>
+    </div>
+    </nav>
+    <script>
+      const menuButton = document.getElementById('menu-button');
+      const menu = document.getElementById('menu');
+
+      menuButton.addEventListener('click', () => {
+        menu.classList.toggle('hidden');
+      });
+
+      document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+        anchor.addEventListener('click', function (e) {
+          e.preventDefault();
+
+          document.querySelector(this.getAttribute('href')).scrollIntoView({
+            behavior: 'smooth'
+          });
+        });
+      });
+    </script>
+   
+    
+    
+    
+    
+    
+    
+    
+    
+    <div
+      class="flex flex-col justify-center items-center text-center mt-6 gap-6 px-6"
+    >
+      <img
+        class="w-44 h-44 rounded-full"
+        src="images/WhatsApp Image 2025-02-26 at 18.56.16.jpeg"
+        alt="profile picture of Ayushman"
+      />
+      <h1 class="text-3xl font-bold text-gray-800">
+        Hi,I am Ayushman,Software Developer
+      </h1>
+      <p class="text-gray-600 text-base">
+        I am a software developer with a passion for creating and developing
+        software solutions. I have experience in developing web applications
+        using modern technologies like React, Node.js, and Express.js. I am
+        always looking for new challenges and opportunities to learn and grow as
+        a developer.
+      </p>
+      <span class="flex grow"
+        ><button class="bg-orange-600 text-white px-3 py-2 rounded-md">
+          Download Resume
+        </button></span
+      >
+    </div>
+
+    <!--Recent Posts-->
+
+    <div id="Recent" class="bg-blue-100 p-6 mt-16 text-center">
+      <h2 class="text-lg">Recent Posts</h2>
+      <div class="bg-white mt-4 flex flex-col gap-4 p-4 text-start">
+        <h2 class="text-xl font-bold text-gray-800">
+          Creating a Dice game from Scratch
+        </h2>
+        <p class="text-gray-500">
+          12 Feb 2023 <span class="mx-3 text-xl">|</span>Design,Game
+        </p>
+        <p class="text-gray-800 text-base">
+          To create a dice game, HTML structures the layout, CSS enhances the design, and JavaScript adds functionality. A button triggers random dice rolls, updating the display dynamically. JavaScript handles user interactions, making the game engaging. This combination results in a simple, interactive, and visually appealing dice game experience.
+        </p>
+      </div>
+
+      <div  class="bg-white mt-4 flex flex-col gap-4 p-4 text-start">
+        <h2 class="text-xl font-bold text-gray-800">
+          Creating a website for my portfolio
+        </h2>
+        <p class="text-gray-500">
+          08 march 2023 <span class="mx-3 text-xl">|</span>Design,Patterns
+        </p>
+        <p class="text-gray-800 text-base">
+          Omnifood offers a smart food subscription service that delivers healthy meals to your door every day. Tailored to personal tastes and nutrition, it ensures balanced eating year-round. With over 250,000 meals delivered last year, Omnifood makes healthy eating effortless. Explore meal options, pricing, and customer testimonials on their website.
+        </p>
+      </div>
+    </div>
+
+    <!--Featured Works-->
+
+    <div id="Featured" class="flex flex-col">
+      <h2 class="text-lg text-center mt-4 text-gray-800">Featured Works</h2>
+      <div class="gap-4 flex flex-col p-4">
+        <img
+          class="rounded-lg"
+          src="images/omnifood.png"
+          alt="Png of my Omnifood Website"
+        />
+        <div class="flex flex-col gap-4 border-b-2 border-b-gray-200 pb-4">
+          <h2 class="text-xl font-bold text-gray-800">Designing Omnifood</h2>
+
+          <p class="text-gray-400">
+            <span
+              class="bg-blue-950 font-bold text-white px-3 py-1 rounded-full inline-block mr-4"
+              >2024</span
+            >
+            Website
+          </p>
+          <p class="text-gray-800 text-base">
+            To create this website, we'll use HTML for structure, CSS for styling, and JavaScript for interactivity. A responsive layout will be designed with CSS Flexbox/Grid. JavaScript will handle dynamic elements like buttons and animations. High-quality images and a clean UI will ensure an engaging user experience, optimized for performance and accessibility.
+        </div>
+      </div>
+
+
+      <!--2-->
+
+
+      <div class="gap-4 flex flex-col p-4 ">
+        <img
+          class="rounded-lg"
+          src="images/GuessMyNumb.png"
+          alt="Png of my Guess my number game"
+        />
+        <div class="flex flex-col gap-4 border-b-2 border-b-gray-200 pb-4">
+          <h2 class="text-xl font-bold text-gray-800">Guess My Number</h2>
+
+          <p class="text-gray-400">
+            <span
+              class="bg-blue-950 font-bold text-white px-3 py-1 rounded-full inline-block mr-4"
+              >2024</span
+            >
+            Game
+          </p>
+          <p class="text-gray-800 text-base">
+            This is a number guessing game where players try to guess a randomly generated number between 1 and 20. The interface includes a guessing input, a check button, and score tracking. Players receive feedback on their guesses, with a high score system encouraging better performance. The game is interactive and engaging.
+          </p>
+        </div>
+      </div>
+
+
+        <!--3-->
+
+
+      <div class="gap-4 flex flex-col p-4 ">
+        <img
+          class="rounded-lg"
+          src="images/Dice.png"
+          alt="Png of my Dice game"
+        />
+        <div class="flex flex-col gap-4 border-b-2 border-b-gray-200 pb-4">
+          <h2 class="text-xl font-bold text-gray-800">Dice Game</h2>
+
+          <p class="text-gray-400">
+            <span
+              class="bg-blue-950 font-bold text-white px-3 py-1 rounded-full inline-block mr-4"
+              >2024</span
+            >
+            Game
+          </p>
+          <p class="text-gray-800 text-base">
+            This is a two-player dice game where players take turns rolling a die to accumulate points. They can choose to "Hold" their score or risk losing it by rolling again. The first player to reach a set target wins. The interface features a sleek design with clear score tracking and interactive buttons.
+          </p>
+        </div>
+      </div>
+    </div>
+
+    <footer class=" text-white py-6 mt-16"></footer>
+      <div class="flex justify-center gap-6 mb-4">
+        <a class="text-2xl" href="https://www.facebook.com" target="_blank">
+          <ion-icon name="logo-facebook"></ion-icon >
+        </a>
+        <a class="text-2xl" href="https://www.instagram.com" target="_blank">
+          <ion-icon name="logo-instagram"></ion-icon>
+        </a>
+       
+        <a class="text-2xl" href="https://www.linkedin.com" target="_blank">
+          <ion-icon name="logo-linkedin"></ion-icon>
+        </a>
+      </div>
+      <p class="text-center text-gray-400">&copy; 2023 Ayushman. All rights reserved.</p>
+    </footer>
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+<script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+  </body>
+</html>
+
